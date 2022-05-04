@@ -1,4 +1,4 @@
-import capitalize from "./capitalize";
+import capitalize from "../units/capitalize";
 
 test('capitalizes all-letter string"', () => {
   expect(capitalize("bir elma")).toBe("Bir elma");
