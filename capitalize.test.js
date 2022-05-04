@@ -7,3 +7,7 @@ test('capitalizes all-letter string"', () => {
 test('capitalizes first letter', () => {
   expect(capitalize("2 elmalar")).toBe("2 Elmalar");
 })
+
+test("capitalizes first accentuated letter", () => {
+  expect(capitalize("ördek")).toBe("Ördek");
+});
