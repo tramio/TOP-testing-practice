@@ -27,3 +27,23 @@ test('substracts a negative number from a positive number', () => {
 test('substracts a positive number from a negative number', () => {
   expect(calculator.substract(-7, 2)).toBe(-9);
 })
+
+test('divides two divisible integers', () => {
+  expect(calculator.divide(25, 5)).toBe(5);
+})
+
+test('divides two indivisible integers', () => {
+  expect(calculator.divide(26, 5)).toBe(5.2);
+})
+
+test('divides two indivisible integers', () => {
+  expect(calculator.divide(10, 3)).toBeCloseTo(3.33);
+})
+
+test('multiplies two integers', () => {
+  expect(calculator.multiply(3, 4)).toBe(12);
+})
+
+test('multiplies two floats', () => {
+  expect(calculator.multiply(3.3, 4.678)).toBeCloseTo(15.437);
+})
