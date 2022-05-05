@@ -1,5 +1,6 @@
 const reverse = string => {
-  return string.split("").reverse().join("");
+  const myString = string.toString();
+  return myString.split("").reverse().join("");
 }
 
 export default reverse;
