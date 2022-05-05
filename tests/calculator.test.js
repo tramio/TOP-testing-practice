@@ -1,4 +1,4 @@
-import calculator from "./calculator";
+import calculator from "../units/calculator";
 
 test('adds two integers', () => {
   expect(calculator.add(2, 3)).toBe(5);
