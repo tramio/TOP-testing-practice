@@ -9,10 +9,15 @@ const analyzeArray = (array) => {
     const min = array.reduce((a, b) => a < b ? a : b);
     return min;
   }
+  const getMax = () => {
+    const max = array.reduce((a, b) => a > b ? a : b);
+    return max;
+  }
   const analyze = () => {
     const average = getAverage();
     const min = getMin();
-    let result = [average, min];
+    const max = getMax();
+    let result = [average, min, max];
     return result;
   }
   const analysis = analyze();

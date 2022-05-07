@@ -11,9 +11,9 @@ test('returns min', () => {
   expect(analysis[1]).toBe(1);
 })
 
-// test('returns max', () => {
-//   expect(analysis[2]).toBe(789);
-// })
+test('returns max', () => {
+  expect(analysis[2]).toBe(789);
+})
 
 // test('returns length', () => {
 //   expect(analysis[3]).toBe(5);
