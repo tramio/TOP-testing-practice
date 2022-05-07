@@ -8,7 +8,7 @@ const caesarCipher = (string) => {
       index = 97;
     } else if (index == 90) {
       index = 65;
-    } else {
+    } else if ((index >= 97 && index < 122) || (index >= 65 && index < 90)) {
       index = index + 1
     }
     return index;
