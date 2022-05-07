@@ -22,6 +22,6 @@ test('ignores punctuation', () => {
   expect(caesarCipher("merhaba,aysel!")).toEqual("nfsibcb,bztfm!");
 })
 
-// test('ignores spaces', () => {
-//   expect(caesarCipher("merhaba aysel")).toEqual("nfsibcb bztfm");
-// })
+test('ignores spaces', () => {
+  expect(caesarCipher("merhaba aysel")).toEqual("nfsibcb bztfm");
+})
