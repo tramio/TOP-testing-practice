@@ -5,15 +5,18 @@ const analyzeArray = (array) => {
     const average = sum / items;
     return average;
   }
+  const getMin = () => {
+    const min = array.reduce((a, b) => a < b ? a : b);
+    return min;
+  }
   const analyze = () => {
-    let average = getAverage();
-    let result = [average];
+    const average = getAverage();
+    const min = getMin();
+    let result = [average, min];
     return result;
   }
-  const average = getAverage();
-  const result = analyze();
-
-  return average;
+  const analysis = analyze();
+  return analysis;
 }
 
 export default analyzeArray;
