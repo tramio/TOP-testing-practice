@@ -6,6 +6,8 @@ const caesarCipher = (string) => {
   const shifted = indexes.map((index) => {
     if (index == 122) {
       index = 97;
+    } else if (index == 90) {
+      index = 65;
     } else {
       index = index + 1
     }
