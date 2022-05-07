@@ -13,11 +13,16 @@ const analyzeArray = (array) => {
     const max = array.reduce((a, b) => a > b ? a : b);
     return max;
   }
+  const getLength = () => {
+    const length = array.length;
+    return length;
+  }
   const analyze = () => {
     const average = getAverage();
     const min = getMin();
     const max = getMax();
-    let result = [average, min, max];
+    const length = getLength();
+    const result = [average, min, max, length];
     return result;
   }
   const analysis = analyze();
